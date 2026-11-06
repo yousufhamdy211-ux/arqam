@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقع ارقام مجانية</title>
+<style>
+body { font-family: Arial; background: #f0f2f5; text-align: center; padding: 20px; }
+h1 { color: #1877f2; }
+.card { background: white; padding: 15px; margin: 10px auto; max-width: 350px; border-radius: 12px; box-shadow: 0 2px 8px #ccc; }
+.number { font-size: 20px; font-weight: bold; direction: ltr; }
+button { background: #1877f2; color: white; border: none; padding: 10px 20px; border-radius: 8px; margin-top: 10px; cursor: pointer; }
+button:hover { background: #0d5cb6; }
+</style>
+</head>
+<body>
+
+<h1>📱 موقع ارقام مجانية</h1>
+<p>اختار رقم وانسخه واستقبل عليه الكود</p>
+
+<div class="card">
+<div class="number">+1 212 555 0148</div>
+<p>امريكا - متاح الان</p>
+<button onclick="copyNum('+12125550148')">نسخ الرقم</button>
+</div>
+
+<div class="card">
+<div class="number">+1 310 555 0192</div>
+<p>امريكا - متاح الان</p>
+<button onclick="copyNum('+13105550192')">نسخ الرقم</button>
+</div>
+
+<div class="card">
+<div class="number">+44 20 7946 0958</div>
+<p>انجلترا - متاح الان</p>
+<button onclick="copyNum('+442079460958')">نسخ الرقم</button>
+</div>
+
+<script>
+function copyNum(num){
+  navigator.clipboard.writeText(num);
+  alert('تم نسخ الرقم: ' + num);
+}
+</script>
+
+</body>
+</html>
